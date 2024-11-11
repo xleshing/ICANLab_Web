@@ -1,0 +1,98 @@
+/* Sidebar container styles */
+.sidebar-container {
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* 側邊欄填滿視窗高度 */
+    width: 200px;  /* 展開時的寬度 */
+    background-color: #4FB4A1;
+    color: #EAEFF2;
+    padding: 20px;
+    transition: transform 0.5s ease; /* 平滑過渡效果 */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0 0; /* 增加頂部空間 */
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    font-size: 16px;
+    color: #EAEFF2;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Toggle button styles */
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* 按鈕在側邊欄旁邊 */
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #4FB4A1;
+    color: #EAEFF2;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    z-index: 1001; /* 確保按鈕顯示在頂層 */
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button.toggled {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* 按鈕在側邊欄旁邊 */
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #4FB4A1;
+    color: #EAEFF2;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    display: flex; /* 使用 flex 佈局 */
+    justify-content: flex-start; /* 內容左對齊 */
+    align-items: center; /* 垂直居中 */
+    z-index: 1001; /* 確保按鈕顯示在頂層 */
+    transition: background-color 0.3s ease;
+}
+/* 當側邊欄隱藏時，將其移出視圖 */
+.sidebar.collapsed {
+    transform: translateX(-100%); /* 隱藏側邊欄 */
+}
+
+/* 當側邊欄隱藏時，將按鈕移至頁面左側 */
+.sidebar.collapsed + .toggle-button {
+    left: 20px; /* 收起後按鈕緊貼左邊 */
+}
+
+/*選到時變色#3A8C77*/
+
+.sidebar a:hover {
+    background-color: #3A8C77;
+}
+
+
+.toggle-button:hover {
+    background-color: #3A8C77;
+}

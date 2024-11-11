@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICANLab - 首頁</title>
-    <link href="styles/index.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 <body>
-<div class="main-container">
-    <h1>ICANLab - 首頁</h1>
-    <ul>
-        <li><a href="profile.html">基本資料</a></li>
-        <li><a href="search.html">研究領域</a></li>
-        <li><a href="school.html">最高學歷</a></li>
-        <li><a href="experence.html">經歷</a></li>
-    </ul>
+<div class="container">
+    <!-- Left Sidebar for Navigation -->
+    <div class="sidebar-container">
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="card1.html">基本資料</a></li>
+            <li><a href="card2.html">研究領域</a></li>
+            <li><a href="card3.html">最高學歷</a></li>
+            <li><a href="card4.html">經歷</a></li>
+        </ul>
+    </div>
+
+    <button class="toggle-button" onclick="toggleSidebar()">☰</button>
+    </div>
+    <!-- Main Content for the Card -->
+    <div class="main-content">
+        <div class="card">
+            <div class="section_header">基本資料</div>
+            <div class="content_section">
+                <p><strong>E-mail:</strong> shihyh@thu.edu.tw</p>
+                <table>
+                    <tr>
+                        <th>研究室位置</th>
+                        <th>研究室分機</th>
+                    </tr>
+                    <tr>
+                        <td>ST330</td>
+                        <td>33809</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="js/sidebar.js"></script>
 </body>
 </html>

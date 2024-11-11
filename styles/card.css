@@ -1,10 +1,26 @@
+/* Basic reset and layout */
 body {
-    background-color: #EAEFF2;
     font-family: Arial, sans-serif;
-    color: #333333;
+    background-color: #EAEFF2;
+    color: #333;
+    margin: 0;
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+/* Container for sidebar and main content */
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Main content style */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 /* Card style */
@@ -58,26 +74,4 @@ th {
 
 td {
     background-color: #F5F5F5;
-}
-
-/* Button container for centering */
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Back button style */
-.back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4FB4A1;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.back-button:hover {
-    background-color: #3A8C77;
 }
