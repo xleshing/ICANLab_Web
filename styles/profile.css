@@ -1,0 +1,83 @@
+body {
+    background-color: #EAEFF2;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Card style */
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin: 16px 0;
+}
+
+/* Section header style */
+.section_header {
+    background-color: #4FB4A1;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+/* Content section styles */
+.content_section {
+    padding: 16px;
+}
+
+.content_section p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4FB4A1;
+    color: #FFFFFF;
+}
+
+td {
+    background-color: #F5F5F5;
+}
+
+/* Button container for centering */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Back button style */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4FB4A1;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #3A8C77;
+}
