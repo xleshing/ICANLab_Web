@@ -11,4 +11,5 @@ body {
     display: flex;
     transition: margin-left 0.5s; /* 增加平滑過渡效果 */
     margin-left: 250px; /* 初始時避開側邊欄 */
+    min-width: 400px;
 }

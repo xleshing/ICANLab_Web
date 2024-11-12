@@ -11,24 +11,28 @@
 </head>
 <body>
 <div class="container">
-    <!-- Left Sidebar for Navigation -->
     <div class="sidebar-container">
-    <div class="sidebar" id="sidebar">
-        <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="card1.html">基本資料</a></li>
-            <li><a href="card2.html">研究領域</a></li>
-            <li><a href="card3.html">最高學歷</a></li>
-            <li><a href="card4.html">經歷</a></li>
-        </ul>
-    </div>
-        <button class="button" ID="toggle-button" onclick="toggleSidebar()"><a>×</a></button>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="card1.html">基本資料</a></li>
+                <li><a href="card2.html">研究領域</a></li>
+                <li><a href="card3.html">最高學歷</a></li>
+                <li><a href="card4.html">經歷</a></li>
+            </ul>
+        </div>
+        <button class="button" id="toggle-button" onclick="toggleSidebar()">
+            <span id="open">×</span>
+            <span id="close">☰</span>
+        </button>
     </div>
 
     <!-- Main Content for the Card -->
     <div class="main-content">
         <div class="card">
-            <div class="section_header">基本資料</div>
+            <div class="section_header">
+                基本資料
+            </div>
             <div class="content_section">
                 <p><strong>E-mail:</strong> shihyh@thu.edu.tw</p>
                 <table>
@@ -44,7 +48,7 @@
             </div>
         </div>
     </div>
+    <script src="js/sidebar.js"></script>
 </div>
-<script src="js/sidebar.js"></script>
 </body>
 </html>

@@ -55,3 +55,15 @@ th {
 td {
     background-color: #F5F5F5;
 }
+/* 滑動動畫效果 */
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card.slide-up {
+    transform: translateY(-500%);
+}
+
+.card.slide-down {
+    transform: translateY(500%);
+}

@@ -1,7 +1,7 @@
 /* Toggle button styles */
 .button {
-    font-size: 24px;
     cursor: pointer;
+    font-size: 30px;
     border: none;
     border-radius: 8px;
     width: 42px; /* 固定寬度 */
@@ -10,12 +10,47 @@
     background-color: #4FB4A1;
     color: #EAEFF2;
 }
+
 #toggle-button{
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     top: 20px;
-    left: 20px; /* 按鈕在側邊欄旁邊 */
+    left: 20px;
+}
+
+#open, #close {
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* 平滑過渡 */
+}
+
+#open {
+    font-size: 30px;
+    opacity: 1;
+    transform: rotate(0deg); /* 初始角度 */
 
 }
+
+#close {
+    font-size: 24px;
+    opacity: 0; /* 初始狀態隱藏 */
+    transform: rotate(-180deg); /* 初始角度 */
+
+}
+
+#toggle-button.toggled #open {
+    transform: rotate(180deg);
+
+}
+
+#toggle-button.toggled #close {
+    transform: rotate(0deg); /* 回到正常角度 */
+
+}
+
 #toggle-button:hover {
     background-color: #3A8C77;
 }
+
+
