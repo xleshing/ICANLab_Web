@@ -1,0 +1,21 @@
+/* Toggle button styles */
+.button {
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    width: 42px; /* 固定寬度 */
+    height: 42px; /* 固定高度 */
+    z-index: 1001; /* 確保按鈕顯示在頂層 */
+    background-color: #4FB4A1;
+    color: #EAEFF2;
+}
+#toggle-button{
+    position: fixed;
+    top: 20px;
+    left: 20px; /* 按鈕在側邊欄旁邊 */
+
+}
+#toggle-button:hover {
+    background-color: #3A8C77;
+}

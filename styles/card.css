@@ -1,26 +1,7 @@
-/* Basic reset and layout */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #EAEFF2;
-    color: #333;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
 
-/* Container for sidebar and main content */
-.container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Main content style */
 .main-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    flex-grow: 1;
+    padding: 20px; /* 確保內容不緊貼視窗邊緣 */
 }
 
 /* Card style */
@@ -29,9 +10,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     max-width: 800px;
-    width: 100%;
     padding: 20px;
-    margin: 16px 0;
+
 }
 
 /* Section header style */

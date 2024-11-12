@@ -43,39 +43,7 @@
     transition: background-color 0.3s ease;
 }
 
-/* Toggle button styles */
-.toggle-button {
-    position: fixed;
-    top: 20px;
-    left: 20px; /* 按鈕在側邊欄旁邊 */
-    font-size: 24px;
-    cursor: pointer;
-    background-color: #4FB4A1;
-    color: #EAEFF2;
-    border: none;
-    border-radius: 8px;
-    padding: 5px 10px 5px 10px;
-    z-index: 1001; /* 確保按鈕顯示在頂層 */
-    transition: background-color 0.3s ease;
-}
 
-.toggle-button.toggled {
-    position: fixed;
-    top: 20px;
-    left: 20px; /* 按鈕在側邊欄旁邊 */
-    font-size: 24px;
-    cursor: pointer;
-    background-color: #4FB4A1;
-    color: #EAEFF2;
-    border: none;
-    border-radius: 8px;
-    padding: 5px 10px 5px 10px;
-    display: flex; /* 使用 flex 佈局 */
-    justify-content: flex-start; /* 內容左對齊 */
-    align-items: center; /* 垂直居中 */
-    z-index: 1001; /* 確保按鈕顯示在頂層 */
-    transition: background-color 0.3s ease;
-}
 /* 當側邊欄隱藏時，將其移出視圖 */
 .sidebar.collapsed {
     transform: translateX(-100%); /* 隱藏側邊欄 */
@@ -93,6 +61,3 @@
 }
 
 
-.toggle-button:hover {
-    background-color: #3A8C77;
-}
