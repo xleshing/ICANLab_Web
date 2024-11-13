@@ -21,7 +21,7 @@ function toggleSidebar() {
         setTimeout(function() {
         close.style.opacity = "1"; // 顯示 "☰"
         }, 500);
-    } else {
+    } else if (!toggle_button.classList.contains("toggled")){
         setTimeout(function() {
         close.style.opacity = "0"; // 隱藏 "☰"
         }, 500);
