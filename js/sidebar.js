@@ -15,17 +15,17 @@ function toggleSidebar() {
     if (toggle_button.classList.contains("toggled")) {
         setTimeout(function() {
         open.style.opacity = "0"; // 隱藏 "×"
-        }, 250);
+        }, 500);
         setTimeout(function() {
         close.style.opacity = "1"; // 顯示 "☰"
-        }, 250);
+        }, 500);
     } else if (!toggle_button.classList.contains("toggled")) {
         setTimeout(function() {
         close.style.opacity = "0"; // 隱藏 "☰"
-        }, 250);
+        }, 500);
         setTimeout(function() {
         open.style.opacity = "1"; // 顯示 "×"
-        }, 250);
+        }, 500);
     }
 
     // container隨著sidebar移動
