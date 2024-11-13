@@ -25,19 +25,15 @@ function toggleSidebar() {
 
     // 檢查是否已經是 "toggled" 狀態
     if (toggle_button.classList.contains("toggled")) {
-        setTimeout(function() {
             open.style.opacity = "0"; // 隱藏 "×"
-        }, 500);
         setTimeout(function() {
             close.style.opacity = "1"; // 顯示 "☰"
-        }, 500);
+        }, 250);
     } else if (!toggle_button.classList.contains("toggled")) {
-        setTimeout(function() {
             close.style.opacity = "0"; // 隱藏 "☰"
-        }, 500);
         setTimeout(function() {
             open.style.opacity = "1"; // 顯示 "×"
-        }, 500);
+        }, 250);
     }
 
     // container隨著sidebar移動
@@ -48,8 +44,8 @@ function toggleSidebar() {
     }
 }
 
-// 將toggleSidebar包裝為防抖函數，延遲300ms
-const debouncedToggleSidebar = debounce(toggleSidebar, 500);
+// 將toggleSidebar包裝為防抖函數
+const debouncedToggleSidebar = debounce(toggleSidebar, 300);
 
 // 綁定到按鈕點擊事件
 document.querySelector("#toggle-button").addEventListener("click", debouncedToggleSidebar);
