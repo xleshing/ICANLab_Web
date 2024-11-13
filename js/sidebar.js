@@ -49,7 +49,7 @@ function toggleSidebar() {
 }
 
 // 將toggleSidebar包裝為防抖函數，延遲300ms
-const debouncedToggleSidebar = debounce(toggleSidebar, 1000);
+const debouncedToggleSidebar = debounce(toggleSidebar, 500);
 
 // 綁定到按鈕點擊事件
 document.querySelector("#toggle-button").addEventListener("click", debouncedToggleSidebar);
