@@ -2,6 +2,10 @@
 .main-content {
     flex-grow: 1;
     padding: 20px; /* 確保內容不緊貼視窗邊緣 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+    height: 70vh;
 }
 
 /* Card style */
@@ -66,4 +70,19 @@ td {
 
 .card.slide-down {
     transform: translateY(500%);
+}
+#index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#index h1{
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 50px;
+    color: #4FB4A1;
+    font-size: 48px;
 }
