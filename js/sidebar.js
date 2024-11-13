@@ -9,25 +9,25 @@ function toggleSidebar() {
     sidebar.classList.toggle("collapsed");
 
     // 切換按鈕的樣式類別
-    setTimeout(function() {
-        toggle_button.classList.toggle("toggled");
-    }, 500);
+    
+    toggle_button.classList.toggle("toggled");
+    
     
     // 檢查是否已經是 "toggled" 狀態
     if (toggle_button.classList.contains("toggled")) {
-        
+        setTimeout(function() {
         open.style.opacity = "0"; // 隱藏 "×"
-        
-        
+        }, 500);
+        setTimeout(function() {
         close.style.opacity = "1"; // 顯示 "☰"
-        
+        }, 500);
     } else if (!toggle_button.classList.contains("toggled")) {
-        
+        setTimeout(function() {
         close.style.opacity = "0"; // 隱藏 "☰"
-        
-        
+        }, 500);
+        setTimeout(function() {
         open.style.opacity = "1"; // 顯示 "×"
-        
+        }, 500);
     }
 
     // container隨著sidebar移動
