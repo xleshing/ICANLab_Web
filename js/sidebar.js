@@ -48,4 +48,4 @@ function toggle() {
 }
 
 // 使用節流來包裝 toggle 函數
-const toggleSidebar = throttle(toggle, 200);
+const toggleSidebar = throttle(toggle, 400);
