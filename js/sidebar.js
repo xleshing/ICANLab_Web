@@ -13,12 +13,16 @@ function toggleSidebar() {
 
     // 檢查是否已經是 "toggled" 狀態
     if (toggle_button.classList.contains("toggled")) {
+        setTimeout(function() {
         open.style.opacity = "0"; // 隱藏 "×"
+        }, 250);
         setTimeout(function() {
         close.style.opacity = "1"; // 顯示 "☰"
         }, 250);
     } else if (!toggle_button.classList.contains("toggled")) {
+        setTimeout(function() {
         close.style.opacity = "0"; // 隱藏 "☰"
+        }, 250);
         setTimeout(function() {
         open.style.opacity = "1"; // 顯示 "×"
         }, 250);
