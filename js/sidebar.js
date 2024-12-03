@@ -1,3 +1,4 @@
+
 // 節流函數
 function throttle(func, limit) {
     let inThrottle;
